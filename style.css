@@ -2,31 +2,76 @@
 02/02/2021 */
 
 body {
-    margin: 2em 5%;
-    background-color: #ffffff;
-    margin: 0 10%;
-    font-family: 'Times New Roman', Times, serif;
-  }
-  
-  h1 {
-    text-align: left;
-    font-family: serif;
-    font-weight: normal;
-    text-transform: uppercase;
-    border-bottom: 1px solid #57b1dc;
-    margin-top: 30px;
-  }
+    font-family: sans-serif;
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-template-rows: auto;
+    grid-template-areas: "Aside Main";
+}
 
-  address {
-      text-align: justify
-  }
+@media (max-width: 800px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "Aside" "Main";
+    }
+}
 
-  h2 {
-    color: #2f3e46;
-    font-size: 1em;
-  }
+aside {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    grid-area: Aside;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "header" "Contact_Information" "Skills" "Education";
+}
 
-  h3 {
-      color: #222222;
-      font-size: 0.89em;
-  }
+main {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    grid-area: Main;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 85%;
+    grid-template-areas: "summary" "work_experience";
+}
+
+#Name {
+    font-size: 2em;
+    margin-bottom: 0.1em;
+    padding-bottom: 0;
+}
+
+#Carrer_Title {
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-left: 1em;
+    padding-top: 0;
+}
+
+#aside_header {
+    grid-area: header;
+}
+
+#Contact_Information {
+    grid-area: Contact_Information;
+}
+
+#Skills {
+    grid-area: Skills;
+}
+
+#Education {
+    grid-area: Education;
+}
+
+#summary {
+    grid-area: summary;
+}
+
+#Work_Volunteer_Experience {
+    grid-area: work_experience;
+}

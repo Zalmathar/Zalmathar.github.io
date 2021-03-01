@@ -1,89 +1,114 @@
 <!DOCTYPE html>
-<!-- 
-    Tanis Olesen
-    01/25/2021
-    My Resume web-page
--->
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tanis Olesen Resume</title>
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 </head>
 
-<!-- TODO: add a grid to the website -->
-
 <body>
-    <header>
-        <H1>Tanis Olesen</H1>
-        <div>(801)-919-9183 </div>
-        <div>jeditanis@gmail.com </div>
-        <address>Mary Nielson Hall, 165 E 100N Ephriam, Utah, 84062</address>
-    </header>
-    <H2>Summary</H2>
-    <hr>
-    <details>
-        <summary>Software Engineer with expereince with C++, C#, java, and web development.</summary>
-    </details>
-    <h2>Skills</h2>
-    <hr>
-    <ul>
-        <li>
-            Experience with C++, C#, java, and Web development
-        </li>
-        <li>
-            Quick learner
-        </li>
-        <li>
-            Troubleshooting
-        </li>
-        <li>
-            Wide knowledge in Hardware and Software installation
-        </li>
-        <li>
-            Quick Learner
-        </li>
-    </ul>
-    <H2>Work/Volunteer History</H2>
-    <hr>
-    <h3>Auditorium Technician</h3>
-    <ul>
-        <li>Aug 2015 - Jun 2016</li>
-        <li>“Alpine School District” in American Fork, UT</li>
-        <li>Worked in the Pleasant Grove Jr. High School auditorium. Ran equipment and worked with customers to understand requirements and provide exceptional service </li>
-        <li>Worked with a team to resolve issues and maintain equipment</li>
-        <li>Trained peers on how to properly maintain and run equipment.</li>
-    </ul>
-    <h3>Customer Service Representative</h3>
-    <ul>
-        <li>Jun 2019 – Aug 2019</li>
-        <li>“Amp Smart” in American Fork, UT</li>
-        <li>Assisted Customers over the phone with account issues</li>
-        <li>Assisted Customers over the phone with payment issues</li>
-        <li>Printed and mailed letters out to customers</li>
-    </ul>
-    <H3>Advanced Repair Agent</H3>
-    <ul>
-        <li>Mar 2020 – Aug 2020</li>
-        <li>“Best Buy” in Orem, UT</li>
-        <li>Diagnose and repair computers, laptops, cell phones and other electronic gadgets.</li>
-        <li>Take detailed notes on issues and steps I have taken to resolve issues.</li>
-        <li>help and Teach customers about their electronic gadgets.</li>
-    </ul>
-    <h2>Education & Certifications</h2>
-    <hr>
-    <h3>High School Diploma</h3><address> 2019<br> Pleasant Grove High School, Pleasant Grove, UT </address>
-    <h3>Certifications</h3>
-    <ul>
-        <li>Microsoft Technology Associate Windows Server Administration Fundamentals</li>
-        <li>Microsoft Technology Associate Windows Operating System Fundamentals </li>
-        <li>Microsoft Technology Associate Security Fundamentals</li>
-        <li>Microsoft Technology Associate Introduction to Programming using JavaScript</li>
-        <li>TestOut Linux Pro</li>
-    </ul>
+    <aside>
+        <header id="aside_header">
+            <h1 id="Name">Tanis Olesen</h1>
+            <h2 id="Carrer_Title">Software Engineer</h2>
+            <hr>
+        </header>
 
+        <div class="Contact_Information">
+
+            <!-- <img src="" alt="Email Icon"> -->
+            <p id="Email">Jeditanis@gmail.com</p>
+            <!-- <img src="" alt="Phone Icon"> -->
+            <p id="Phone">801-919-9183</p>
+            <!-- <img src="" alt="Location Pin Icon"> -->
+            <address id="address">Mary Nielson Hall, 165 E 100N Ephriam, Utah, 84062</address>
+            <!-- <img src="" alt="Github logo"> -->
+            <p id="Github link" href="https://github.com/Zalmathar">https://github.com/Zalmathar</p>
+        </div>
+
+        <div class="Skills">
+            <h3>Skills</h3>
+
+            <hr>
+            <ul>
+                <li>
+                    Experience with C++, C#, java, and Web development
+                </li>
+                <li>
+                    Quick learner
+                </li>
+                <li>
+                    Troubleshooting
+                </li>
+                <li>
+                    Wide knowledge in Hardware and Software installation
+                </li>
+                <li>
+                    Critical Thinking
+                </li>
+            </ul>
+        </div>
+
+        <div class="Education">
+            <h3>Education & Certifications</h3>
+            <hr>
+
+            <h4>High School Diploma 2019</h4>
+            <address> Pleasant Grove High School, Pleasant Grove, UT</address>
+
+            <h4 id="Certifications">Certifications</h4>
+            <ul>
+                <li>Microsoft Technology Associate Windows Server Administration Fundamentals</li>
+                <li>Microsoft Technology Associate Windows Operating System Fundamentals </li>
+                <li>Microsoft Technology Associate Security Fundamentals</li>
+                <li>Microsoft Technology Associate Introduction to Programming using JavaScript</li>
+                <li>TestOut Linux Pro</li>
+            </ul>
+        </div>
+    </aside>
+
+    <main>
+        <div id="summary">
+            <h2>Summary</h2>
+            <hr>
+            <p>
+                Sofware Engineer major at snow college. Posseses 1 Year of expereince with C++, C#, and Java.
+            </p>
+            <hr>
+        </div>
+        <div id="Work_Volunteer_Experience">
+            <h2>Work/Vounteer Experience</h2>
+
+            <hr>
+            <h3>Auditorium Technician</h3>
+            <ul>
+                <li>Aug 2015 - Jun 2016</li>
+                <li>“Alpine School District” in American Fork, UT</li>
+                <li>Worked in the Pleasant Grove Jr. High School auditorium. Ran equipment and worked with customers to understand requirements and provide exceptional service </li>
+                <li>Worked with a team to resolve issues and maintain equipment</li>
+                <li>Trained peers on how to properly maintain and run equipment.</li>
+            </ul>
+            <h3>Customer Service Representative</h3>
+            <ul>
+                <li>Jun 2019 – Aug 2019</li>
+                <li>“Amp Smart” in American Fork, UT</li>
+                <li>Assisted Customers over the phone with account issues</li>
+                <li>Assisted Customers over the phone with payment issues</li>
+                <li>Printed and mailed letters out to customers</li>
+            </ul>
+            <H3>Advanced Repair Agent</H3>
+            <ul>
+                <li>Mar 2020 – Aug 2020</li>
+                <li>“Best Buy” in Orem, UT</li>
+                <li>Diagnose and repair computers, laptops, cell phones and other electronic gadgets.</li>
+                <li>Take detailed notes on issues and steps I have taken to resolve issues.</li>
+                <li>help and Teach customers about their electronic gadgets.</li>
+            </ul>
+        </div>
+    </main>
 </body>
 
 </html>
